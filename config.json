@@ -1,0 +1,5 @@
+{
+	"config_dir": "./blockData/data",
+	"data_dir": "./blockData/data",
+	"chain-state-db-size-mb": 20480
+}
