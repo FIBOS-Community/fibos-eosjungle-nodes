@@ -13,7 +13,7 @@ console.notice("data_dir:", fibos.data_dir);
 
 
 fibos.load("http", {
-	"http-server-address": "0.0.0.0:8870",
+	"http-server-address": "0.0.0.0:8801",
 	"access-control-allow-origin": "*",
 	"http-validate-host": false,
 	"verbose-http-errors": true //打开报错
@@ -23,7 +23,7 @@ fibos.load("http", {
 fibos.load("net", {
 	"p2p-peer-address": p2p_peer_address,
 	"max-clients": 100,
-	"p2p-listen-endpoint": "0.0.0.0:9870"
+	"p2p-listen-endpoint": "0.0.0.0:9801"
 });
 
 var chain_config = {
@@ -42,5 +42,6 @@ fibos.load("chain_api");
 
 fibos.pubkey_prefix = "EOS";
 fibos.core_symbol = "EOS";
+fibos.enableJSContract = false;
 
 fibos.start();
