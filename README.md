@@ -7,6 +7,9 @@
 
 ## 说明
 
+bp:
+	fibosvsfibos
+
 API node:
 
 	http://api-jungle-fibos.testnet.fo:8801/v1/chain/get_info
